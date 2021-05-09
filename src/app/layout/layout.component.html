@@ -1,0 +1,28 @@
+<h3>With label</h3>
+
+<div class="form-group">
+  <label>Is married?</label>
+  <ui-switch [(ngModel)]="isMarried"></ui-switch>
+</div>
+
+<p>Is married?: {{isMarried}}</p>
+
+<hr/>
+
+<h3>With label at the top</h3>
+
+<div class="form-group d-flex flex-column">
+  <label>Is single?</label>
+  <ui-switch [(ngModel)]="isSingle"></ui-switch>
+</div>
+
+<h3>Responsive label (center at large, between content at less than large)</h3>
+
+<div class="form-group d-flex flex-lg-column justify-content-between justify-content-lg-center align-items-center">
+  <label>Is allergic?</label>
+  <ui-switch [(ngModel)]="isAllergic"></ui-switch>
+</div>
+<div class="form-group d-flex flex-lg-column justify-content-between justify-content-lg-center align-items-center">
+  <label>Is single?</label>
+  <ui-switch [(ngModel)]="isSingle"></ui-switch>
+</div>
